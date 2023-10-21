@@ -1,4 +1,3 @@
-
 import os
 from collections import Counter
 
@@ -58,12 +57,12 @@ def show_result(rare_result):
 
 
 # Load Dataset
-df = pd.read_csv("../data/patoyata_gacha/image_list.csv")
+df = pd.read_csv("./data/patoyata_gacha/image_list.csv")
 df.rename(columns={"rare": "レア度", "name": "キャラ名"}, inplace=True)
 
 file_path_list = []
 for f in df["share_url"]:
-    path = os.path.join("../data/patoyata_gacha", f)
+    path = os.path.join("./data/patoyata_gacha", f)
     file_path_list.append(path)
 
 df["file_path"] = file_path_list
