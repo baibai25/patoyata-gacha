@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "patoyata-gacha"
+version = "0.1.0"
+description = ""
+authors = ["baibai25 <kamuy.camel.0225@gmail.com>"]
+readme = "README.md"
+packages = [{include = "patoyata_gacha"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
+ipykernel = "^6.25.2"
+streamlit = "^1.27.2"
+pandas = "^2.1.1"
+numpy = "^1.26.1"
+matplotlib = "^3.8.0"
+seaborn = "^0.13.0"
+pillow = "^10.1.0"
+japanize-matplotlib = "^1.1.3"
+streamlit-nested-layout = "^0.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
